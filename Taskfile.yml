@@ -1,0 +1,21 @@
+version: '3'
+
+tasks:
+
+  default:
+    cmds:
+      - task --list-all
+    desc: Lists all tasks
+    silent: true
+
+  run:
+    cmds:
+      - go run cmd/main.go
+    desc: Runs cmd/main.go
+    silent: true
+  
+  test:
+    cmds:
+      - go test ./...
+    desc: Runs tests
+    silent: true
