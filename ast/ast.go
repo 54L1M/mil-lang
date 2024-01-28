@@ -40,13 +40,13 @@ func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
 }
 
-type LetStatement struct {
+type VarStatement struct {
 	Token token.Token
 	Name  *Identifier
 	Value Expression
 }
 
-func (ls *LetStatement) statementNode() {}
-func (ls *LetStatement) TokenLiteral() string {
+func (ls *VarStatement) statementNode() {}
+func (ls *VarStatement) TokenLiteral() string {
 	return ls.Token.Literal
 }
